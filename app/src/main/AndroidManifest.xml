@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCashFlow">
-        <activity android:name=".Beranda"></activity>
+        <activity android:name=".TambahPemasukan"></activity>
+        <activity android:name=".Beranda" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
