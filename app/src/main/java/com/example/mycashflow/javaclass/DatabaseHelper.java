@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    public static final String database_name = "DB_MyPayment";
+    public static final String database_name = "DB_MyCashFlow";
     public static final String table_name = "CashFlow";
 
 
