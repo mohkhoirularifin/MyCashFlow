@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".TambahPemasukan">
 
     <TextView
@@ -36,6 +37,7 @@
 
     <ImageView
         android:id="@+id/imageCalender"
+        android:outlineAmbientShadowColor="@color/black"
         android:layout_width="37dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
@@ -45,12 +47,11 @@
         app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
 
     <TextView
-        android:id="@+id/tanggalView"
+        android:id="@+id/viewTanggal"
         android:layout_width="307dp"
         android:layout_height="38dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
-        android:background="@drawable/rectangel"
         android:text="00-00-0000"
         android:textColor="@color/black"
         android:textSize="17dp"
@@ -69,17 +70,20 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tanggalView" />
+        app:layout_constraintTop_toBottomOf="@+id/viewTanggal" />
 
     <EditText
-        android:id="@+id/editTextNominal"
+        android:id="@+id/editTextNominalMasuk"
         android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="Masukkan Nominal Pengeluaran"
+        android:textColorHint="@color/black"
         android:inputType="number"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,16 +99,19 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNominal" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNominalMasuk" />
 
     <EditText
-        android:id="@+id/keteranganEditText"
+        android:id="@+id/editTextKeteranganPemasukan"
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="Masukkan Keterangan Pengeluaran"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -112,7 +119,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
-        android:id="@+id/buttonPemasukan"
+        android:id="@+id/buttonSimpanPemasukan"
         android:layout_width="0dp"
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
@@ -123,7 +130,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/keteranganEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextKeteranganPemasukan" />
 
     <Button
         android:id="@+id/button2"
@@ -137,5 +144,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPemasukan" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSimpanPemasukan" />
 </androidx.constraintlayout.widget.ConstraintLayout>

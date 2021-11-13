@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".TambahPengeluaran">
     <TextView
         android:id="@+id/textView5"
@@ -38,13 +39,14 @@
         android:layout_width="37dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
+        android:outlineAmbientShadowColor="@color/black"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
 
     <TextView
-        android:id="@+id/pengeluaranTanggal"
+        android:id="@+id/viewTanggalPengeluaran"
         android:layout_width="307dp"
         android:layout_height="38dp"
         android:layout_marginStart="8dp"
@@ -67,15 +69,18 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pengeluaranTanggal" />
+        app:layout_constraintTop_toBottomOf="@+id/viewTanggalPengeluaran" />
 
     <EditText
-        android:id="@+id/editTextNominalPengeluaran"
+        android:id="@+id/editTextNominalKeluar"
         android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
+        android:hint="Masukkan Nominal Pengeluaran"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,16 +98,19 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNominalPengeluaran" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNominalKeluar" />
 
     <EditText
-        android:id="@+id/keteranganEditTextPengeluaran"
+        android:id="@+id/editTextKeteranganPengeluaran"
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="Masukkan Keterangan Pengeluaran"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -110,7 +118,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
-        android:id="@+id/buttonPengeluran"
+        android:id="@+id/buttonSimpanPengeluran"
         android:layout_width="0dp"
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
@@ -121,7 +129,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/keteranganEditTextPengeluaran" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextKeteranganPengeluaran" />
 
     <Button
         android:id="@+id/button2"
@@ -135,6 +143,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPengeluran" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSimpanPengeluran" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
